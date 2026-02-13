@@ -53,3 +53,38 @@ section {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.profile-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.profile-wrapper:hover .profile-overlay {
+  opacity: 1;
+}
+
+.profile-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.profile-overlay i {
+  font-size: 5rem;
+  color: #b0b0b0;
+}
+
+.profile-wrapper {
+  transition: transform 0.3s ease;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
